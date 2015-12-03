@@ -18,169 +18,113 @@
     <![endif]-->
 </head>
 <body>
-
-  <div class="navbar navbar-fixed-top">
-		<div class="navbar-inner">
-			<div class="container">
-				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-					<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-				</a>
-				<a class="brand" href="index.html">Halaman Kerja </a>
-				<div class="nav-collapse">
-					<ul class="nav pull-right">
-						<li>
-							<form class="navbar-search pull-right">
-								<input type="text" class="search-query" placeholder="Search">
-							</form>
-						</li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-								<i class="icon-user"></i> Admin <b class="caret"></b>
-							</a>
-							<ul class="dropdown-menu">
-								<li><a href="javascript:;">Profile</a></li>
-								<li><a href="javascript:;">Logout</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-				<!--/.nav-collapse --> 
-			</div>
-			<!-- /container --> 
-		</div>
-		<!-- /navbar-inner --> 
-	</div>
-	<!-- /navbar -->
-	<div class="subnavbar">
-		<div class="subnavbar-inner">
-			<div class="container">
-				<ul class="mainnav">
-					<li class="active"><a href="index.html"><i class="icon-dashboard"></i><span>Dashboard</span> </a> </li>
-					<li><a href="reports.html"><i class="icon-list-alt"></i><span>Reports</span> </a> </li>
-					<li><a href="charts.html"><i class="icon-bar-chart"></i><span>Charts</span> </a> </li>
-					<li><a href="faq.html"><i class="icon-facetime-video"></i><span>FAQ</span> </a></li>
-					<li><a href="shortcodes.html"><i class="icon-code"></i><span>Shortcodes</span> </a> </li>
-			 </ul>
-			</div>
-			<!-- /container --> 
-		</div>
-		<!-- /subnavbar-inner --> 
-	</div>
-	<!-- /subnavbar -->
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span
+                    class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span> </a><a class="brand" href="index.html">Bootstrap Admin Template </a>
+      <div class="nav-collapse">
+        <ul class="nav pull-right">
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
+                            class="icon-cog"></i> Account <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="javascript:;">Settings</a></li>
+              <li><a href="javascript:;">Help</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
+                            class="icon-user"></i> EGrappler.com <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="javascript:;">Profile</a></li>
+              <li><a href="javascript:;">Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="navbar-search pull-right">
+          <input type="text" class="search-query" placeholder="Search">
+        </form>
+      </div>
+      <!--/.nav-collapse --> 
+    </div>
+    <!-- /container --> 
+  </div>
+  <!-- /navbar-inner --> 
+</div>
+<!-- /navbar -->
+<div class="subnavbar">
+  <div class="subnavbar-inner">
+    <div class="container">
+      <ul class="mainnav">
+        <li class="active"><a href="index.html"><i class="icon-dashboard"></i><span>Dashboard</span> </a> </li>
+        <li><a href="reports.html"><i class="icon-list-alt"></i><span>Reports</span> </a> </li>
+        <li><a href="guidely.html"><i class="icon-facetime-video"></i><span>App Tour</span> </a></li>
+        <li><a href="charts.html"><i class="icon-bar-chart"></i><span>Charts</span> </a> </li>
+        <li><a href="shortcodes.html"><i class="icon-code"></i><span>Shortcodes</span> </a> </li>
+        <li class="dropdown"><a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon-long-arrow-down"></i><span>Drops</span> <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="icons.html">Icons</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="pricing.html">Pricing Plans</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Signup</a></li>
+            <li><a href="error.html">404</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- /container --> 
+  </div>
+  <!-- /subnavbar-inner --> 
+</div>
+<!-- /subnavbar -->
 <div class="main">
   <div class="main-inner">
     <div class="container">
       <div class="row">
         <div class="span6">
-          
+          <div class="widget widget-nopad">
+            <div class="widget-header"> <i class="icon-list-alt"></i>
+              <h3> Today's Stats</h3>
+            </div>
+            <!-- /widget-header -->
+            <div class="widget-content">
+              <div class="widget big-stats-container">
+                <div class="widget-content">
+                  <h6 class="bigstats">A fully responsive premium quality admin template built on Twitter Bootstrap by <a href="http://www.egrappler.com" target="_blank">EGrappler.com</a>.  These are some dummy lines to fill the area.</h6>
+                  <div id="big_stats" class="cf">
+                    <div class="stat"> <i class="icon-anchor"></i> <span class="value">851</span> </div>
+                    <!-- .stat -->
+                    
+                    <div class="stat"> <i class="icon-thumbs-up-alt"></i> <span class="value">423</span> </div>
+                    <!-- .stat -->
+                    
+                    <div class="stat"> <i class="icon-twitter-sign"></i> <span class="value">922</span> </div>
+                    <!-- .stat -->
+                    
+                    <div class="stat"> <i class="icon-bullhorn"></i> <span class="value">25%</span> </div>
+                    <!-- .stat --> 
+                  </div>
+                </div>
+                <!-- /widget-content --> 
+                
+              </div>
+            </div>
+          </div>
+          <!-- /widget -->
+          <div class="widget widget-nopad">
+            <div class="widget-header"> <i class="icon-list-alt"></i>
+              <h3> Recent News</h3>
+            </div>
+            <!-- /widget-header -->
+            <div class="widget-content">
+              <div id='calendar'>
+              </div>
+            </div>
+            <!-- /widget-content --> 
+          </div>
           <!-- /widget -->
           <div class="widget">
-            <div class="widget-header"> <i class="icon-bookmark"></i>
-              <h3> Shortcuts Kerja</h3>
-            </div>
-            <!-- /widget-header -->
-            <div class="widget-content">
-              <div class="shortcuts">
-								<a href="javascript:;" class="shortcut">
-									<i class="shortcut-icon icon-list-alt"></i>
-									<span class="shortcut-label">Input</span>
-								</a>
-								<a href="javascript:;" class="shortcut">
-									<i class="shortcut-icon icon-bookmark"></i>
-									<span class="shortcut-label">Bookmarks</span>
-								</a>
-								<a href="javascript:;" class="shortcut">
-									<i class="shortcut-icon icon-signal"></i>
-									<span class="shortcut-label">Reports</span>
-								</a>
-								<a href="javascript:;" class="shortcut">
-									<i class="shortcut-icon icon-comment"></i>
-									<span class="shortcut-label">Comments</span>
-								</a>
-								<!--<a href="javascript:;" class="shortcut">
-									<i class="shortcut-icon icon-user"></i>
-									<span class="shortcut-label">Users</span>
-								</a>
-								<a href="javascript:;" class="shortcut">
-									<i class="shortcut-icon icon-file"></i>
-									<span class="shortcut-label">Notes</span>
-								</a>
-								<a href="javascript:;" class="shortcut">
-									<i class="shortcut-icon icon-picture"></i>
-									<span class="shortcut-label">Photos</span>
-								</a>
-								<a href="javascript:;" class="shortcut">
-									<i class="shortcut-icon icon-tag"></i>
-									<span class="shortcut-label">Tags</span>
-								</a>-->
-							</div>
-              <!-- /shortcuts --> 
-            </div>
-            <!-- /widget-content --> 
-          </div>
-					<!-- /widget Chart-->
-          <div class="widget">
-            <div class="widget-header"> <i class="icon-signal"></i>
-              <h3> Chart Example</h3>
-            </div>
-            <!-- /widget-header -->
-            <div class="widget-content">
-              <canvas id="area-chart" class="chart-holder" height="250" width="538"> </canvas>
-              <!-- /area-chart --> 
-            </div>
-            <!-- /widget-content --> 
-          </div>
-          <!-- /widget table-->
-          <div class="widget widget-table action-table">
-            <div class="widget-header"> <i class="icon-th-list"></i>
-              <h3>A Table Example</h3>
-            </div>
-            <!-- /widget-header -->
-            <div class="widget-content">
-              <table class="table table-striped table-bordered">
-                <thead>
-                  <tr>
-                    <th> Free Resource </th>
-                    <th> Download</th>
-                    <th class="td-actions"> </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td> Fresh Web Development Resources </td>
-                    <td> http://www.egrappler.com/ </td>
-                    <td class="td-actions"><a href="javascript:;" class="btn btn-small btn-success"><i class="btn-icon-only icon-ok"> </i></a><a href="javascript:;" class="btn btn-danger btn-small"><i class="btn-icon-only icon-remove"> </i></a></td>
-                  </tr>
-                  <tr>
-                    <td> Fresh Web Development Resources </td>
-                    <td> http://www.egrappler.com/ </td>
-                    <td class="td-actions"><a href="javascript:;" class="btn btn-small btn-success"><i class="btn-icon-only icon-ok"> </i></a><a href="javascript:;" class="btn btn-danger btn-small"><i class="btn-icon-only icon-remove"> </i></a></td>
-                  </tr>
-                  <tr>
-                    <td> Fresh Web Development Resources </td>
-                    <td> http://www.egrappler.com/ </td>
-                    <td class="td-actions"><a href="javascript:;" class="btn btn-small btn-success"><i class="btn-icon-only icon-ok"> </i></a><a href="javascript:;" class="btn btn-danger btn-small"><i class="btn-icon-only icon-remove"> </i></a></td>
-                  </tr>
-                  <tr>
-                    <td> Fresh Web Development Resources </td>
-                    <td> http://www.egrappler.com/ </td>
-                    <td class="td-actions"><a href="javascript:;" class="btn btn-small btn-success"><i class="btn-icon-only icon-ok"> </i></a><a href="javascript:;" class="btn btn-danger btn-small"><i class="btn-icon-only icon-remove"> </i></a></td>
-                  </tr>
-                  <tr>
-                    <td> Fresh Web Development Resources </td>
-                    <td> http://www.egrappler.com/ </td>
-                    <td class="td-actions"><a href="javascript:;" class="btn btn-small btn-success"><i class="btn-icon-only icon-ok"> </i></a><a href="javascript:;" class="btn btn-danger btn-small"><i class="btn-icon-only icon-remove"> </i></a></td>
-                  </tr>
-                
-                </tbody>
-              </table>
-            </div>
-            <!-- /widget-content --> 
-          </div>
-          <!-- /widget feedback-->
-          <div class="widget">
             <div class="widget-header"> <i class="icon-file"></i>
-              <h3> Feedback terbaru</h3>
+              <h3> Content</h3>
             </div>
             <!-- /widget-header -->
             <div class="widget-content">
@@ -257,13 +201,79 @@
         </div>
         <!-- /span6 -->
         <div class="span6">
-          <div class="widget widget-nopad">
-            <div class="widget-header"> <i class="icon-list-alt"></i>
-              <h3> Kalender Even</h3>
+          <div class="widget">
+            <div class="widget-header"> <i class="icon-bookmark"></i>
+              <h3>Important Shortcuts</h3>
             </div>
+            <!-- /widget-header -->
             <div class="widget-content">
-              <div id='calendar'></div>
+              <div class="shortcuts"> <a href="javascript:;" class="shortcut"><i class="shortcut-icon icon-list-alt"></i><span
+                                        class="shortcut-label">Apps</span> </a><a href="javascript:;" class="shortcut"><i
+                                            class="shortcut-icon icon-bookmark"></i><span class="shortcut-label">Bookmarks</span> </a><a href="javascript:;" class="shortcut"><i class="shortcut-icon icon-signal"></i> <span class="shortcut-label">Reports</span> </a><a href="javascript:;" class="shortcut"> <i class="shortcut-icon icon-comment"></i><span class="shortcut-label">Comments</span> </a><a href="javascript:;" class="shortcut"><i class="shortcut-icon icon-user"></i><span
+                                                class="shortcut-label">Users</span> </a><a href="javascript:;" class="shortcut"><i
+                                                    class="shortcut-icon icon-file"></i><span class="shortcut-label">Notes</span> </a><a href="javascript:;" class="shortcut"><i class="shortcut-icon icon-picture"></i> <span class="shortcut-label">Photos</span> </a><a href="javascript:;" class="shortcut"> <i class="shortcut-icon icon-tag"></i><span class="shortcut-label">Tags</span> </a> </div>
+              <!-- /shortcuts --> 
             </div>
+            <!-- /widget-content --> 
+          </div>
+          <!-- /widget -->
+          <div class="widget">
+            <div class="widget-header"> <i class="icon-signal"></i>
+              <h3> Area Chart Example</h3>
+            </div>
+            <!-- /widget-header -->
+            <div class="widget-content">
+              <canvas id="area-chart" class="chart-holder" height="250" width="538"> </canvas>
+              <!-- /area-chart --> 
+            </div>
+            <!-- /widget-content --> 
+          </div>
+          <!-- /widget -->
+          <div class="widget widget-table action-table">
+            <div class="widget-header"> <i class="icon-th-list"></i>
+              <h3>A Table Example</h3>
+            </div>
+            <!-- /widget-header -->
+            <div class="widget-content">
+              <table class="table table-striped table-bordered">
+                <thead>
+                  <tr>
+                    <th> Free Resource </th>
+                    <th> Download</th>
+                    <th class="td-actions"> </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td> Fresh Web Development Resources </td>
+                    <td> http://www.egrappler.com/ </td>
+                    <td class="td-actions"><a href="javascript:;" class="btn btn-small btn-success"><i class="btn-icon-only icon-ok"> </i></a><a href="javascript:;" class="btn btn-danger btn-small"><i class="btn-icon-only icon-remove"> </i></a></td>
+                  </tr>
+                  <tr>
+                    <td> Fresh Web Development Resources </td>
+                    <td> http://www.egrappler.com/ </td>
+                    <td class="td-actions"><a href="javascript:;" class="btn btn-small btn-success"><i class="btn-icon-only icon-ok"> </i></a><a href="javascript:;" class="btn btn-danger btn-small"><i class="btn-icon-only icon-remove"> </i></a></td>
+                  </tr>
+                  <tr>
+                    <td> Fresh Web Development Resources </td>
+                    <td> http://www.egrappler.com/ </td>
+                    <td class="td-actions"><a href="javascript:;" class="btn btn-small btn-success"><i class="btn-icon-only icon-ok"> </i></a><a href="javascript:;" class="btn btn-danger btn-small"><i class="btn-icon-only icon-remove"> </i></a></td>
+                  </tr>
+                  <tr>
+                    <td> Fresh Web Development Resources </td>
+                    <td> http://www.egrappler.com/ </td>
+                    <td class="td-actions"><a href="javascript:;" class="btn btn-small btn-success"><i class="btn-icon-only icon-ok"> </i></a><a href="javascript:;" class="btn btn-danger btn-small"><i class="btn-icon-only icon-remove"> </i></a></td>
+                  </tr>
+                  <tr>
+                    <td> Fresh Web Development Resources </td>
+                    <td> http://www.egrappler.com/ </td>
+                    <td class="td-actions"><a href="javascript:;" class="btn btn-small btn-success"><i class="btn-icon-only icon-ok"> </i></a><a href="javascript:;" class="btn btn-danger btn-small"><i class="btn-icon-only icon-remove"> </i></a></td>
+                  </tr>
+                
+                </tbody>
+              </table>
+            </div>
+            <!-- /widget-content --> 
           </div>
           <!-- /widget --> 
           <div class="widget widget-nopad">
@@ -317,12 +327,18 @@
     <div class="container">
       <div class="row">
         <div class="span12">Arsenio - Admin.</div>
+        <!-- /span12 --> 
       </div>
+      <!-- /row --> 
     </div>
+    <!-- /container --> 
   </div>
+  <!-- /footer-inner --> 
 </div>
-
-<!-- Javascriptnyo --> 
+<!-- /footer --> 
+<!-- Le javascript
+================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
 <script src="js/jquery-1.7.2.min.js"></script> 
 <script src="js/excanvas.min.js"></script> 
 <script src="js/chart.min.js" type="text/javascript"></script> 
@@ -404,42 +420,48 @@
           editable: true,
           events: [
             {
-              title: 'Pembangunan Jalan tralala di desa Trilili',
+              title: 'All Day Event',
               start: new Date(y, m, 1)
             },
             {
-              title: 'Pembangunan Gedung tingkat 100',
+              title: 'Long Event',
               start: new Date(y, m, d+5),
               end: new Date(y, m, d+7)
             },
             {
               id: 999,
-              title: 'Event di kota tralala',
+              title: 'Repeating Event',
               start: new Date(y, m, d-3, 16, 0),
               allDay: false
             },
             {
               id: 999,
-              title: 'Meeting client',
+              title: 'Repeating Event',
               start: new Date(y, m, d+4, 16, 0),
               allDay: false
             },
             {
-              title: 'Meeting Atasan',
+              title: 'Meeting',
               start: new Date(y, m, d, 10, 30),
               allDay: false
             },
             {
-              title: 'Dinner sama pak mentri',
+              title: 'Lunch',
               start: new Date(y, m, d, 12, 0),
               end: new Date(y, m, d, 14, 0),
               allDay: false
             },
             {
-              title: 'Pembangunan selesai',
+              title: 'Birthday Party',
               start: new Date(y, m, d+1, 19, 0),
               end: new Date(y, m, d+1, 22, 30),
               allDay: false
+            },
+            {
+              title: 'EGrappler.com',
+              start: new Date(y, m, 28),
+              end: new Date(y, m, 29),
+              url: 'http://EGrappler.com/'
             }
           ]
         });
