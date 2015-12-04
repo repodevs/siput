@@ -1141,8 +1141,7 @@ color: #333;
 		margin-bottom: 0;
 		
 		font-size: 20px;
-	}
-	
+	}	
 	
 	.subnavbar-open-right .dropdown-menu {
 		left: auto;
@@ -1186,10 +1185,35 @@ color: #333;
 	}
 
 }
-    
 
-
-
+/*new styling form-horizontal*/
+#kategori {
+	margin: 20px 0 0 -15px;
+	padding: 0;
+}
+#kategori li {
+	list-style: none;
+	font-size: 16px;
+	width: 110%;
+	border-top: 1px #d6d6d6 solid;
+}
+#kategori li a { 
+	margin-left: 20px;
+	padding: 12px 0;
+	display: block;
+}
+#kategori li:hover {
+	background-color: #d6d6d6;
+}
+#kategori li a:hover{
+	text-decoration: none;
+	color: white;
+}
+.shortcuts #inputAnggaran {
+	display: block;
+	width: 100%;
+	font-size: 16px;
+}
 
 /*------------------------------------------------------------------
 [3. Max Width: 979px]
@@ -1211,9 +1235,7 @@ color: #333;
 	}
 }
 
-
-
-
+/*the other*/
 
 
 /*------------------------------------------------------------------
