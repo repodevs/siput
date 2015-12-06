@@ -23,6 +23,10 @@
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+      <script src="js/function.js"></script>
+      <script type="text/javascript">
+      	if(getCookie('username').length<1) window.location.href='login.html';
+      </script>
 
   </head>
 
@@ -185,10 +189,9 @@
 										<h3>Tambah Feedback</h3>
 									</div>
 									<!-- feedback form -->
-									<form id="feedback-form">
 										<input type="hidden" name="ktp" value="1234567"></input>
 										<div class="form-group">
-											<textarea class="form-control inputFeed input-feedback" rows="4" name="content"></textarea>
+											<textarea id="inMsg" class="form-control inputFeed input-feedback" rows="4" name="content"></textarea>
 										</div>
 	
 										<div class="form-group">
@@ -199,8 +202,7 @@
 										    </div>
 										</div>
 										<br>
-										<button class="btn btn-primary btn-block" onclick="sendFeedback();">Kirim Feedback</button>
-									</form>
+										<button id="sendFeed" class="btn btn-primary btn-block">Kirim Feedback</button>
 
 									<br><br>
 									<!--User Feedback-->
@@ -209,7 +211,7 @@
 										<h3>User Feedback</h3>
 									</div><br>
 									<!--this is comment-->
-									<ul class="messages_layout">
+									<ul id="messages_layout" class="messages_layout">
 										<li class="from_user left"> <a href="#" class="avatar"><img src="img/message_avatar1.png"/></a>
 											<div class="message_wrap"> <span class="arrow"></span>
 												<div class="info"> <a class="name">Paijo</a> <span class="time">1 hour ago</span>
@@ -315,13 +317,13 @@
 									</ul>
 									<!--/this is comment-->
 												
-									<div class="paginationComment">
-										<!--Pagination-->
-										<ul class="pager">
-											<li><a href="#">next</a></li>
-											<li><a href="#">prev</a></li>
-										</ul>
-									</div>
+								</div>
+								<div class="paginationComment">
+									<!--Pagination-->
+									<ul class="pager">
+										<li><a href="#">next</a></li>
+										<li><a href="#">prev</a></li>
+									</ul>
 								</div>
 							</div>
 						</div> <!-- /widget-content -->
@@ -346,6 +348,14 @@
 	<script src="js/bootstrap.js"></script>
   	<script src="js/owl.carousel.min.js"></script>
   	<script src="js/feedback.js"></script>
+	<script>
+		$('#kategori>li>a').before('<input type="checkbox" class="checkboxKategori" id="jakarta" value="jakarta">')
+  		$('#user').text(getCookie('username').replace(/\+/g, ' '));
+  		$('#logout').on('click', function(){ 
+  			document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
+  			window.location.href='login.html' 
+  		});
+	</script>
 
 	<script>
 		$(document).ready(function() {
