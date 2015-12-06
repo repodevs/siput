@@ -8,7 +8,7 @@ $(document).ready(function(){
 		username = $(this).val();
 		$.ajax({
 			method 	: 'POST',
-			url		: 'js/signup.php',
+			url		: 'sys/signup.php',
 			data 	: {
 				submit : 'cekuser',
 				user 	: username
@@ -98,7 +98,7 @@ $(document).ready(function(){
 		if(username && fullname && ktp && email  && password && password2){
 			$.ajax({
 				method 	: 'POST',
-				url 	: 'js/signup.php',
+				url 	: 'sys/signup.php',
 				data 	: {
 					username  : username,
 					fullname  : fullname,
