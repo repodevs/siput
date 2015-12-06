@@ -11,6 +11,7 @@
 			rel="stylesheet">
 	<link href="css/font-awesome.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
+     <script src="js/function.js"></script>
 
 	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 	<!--[if lt IE 9]>
@@ -32,15 +33,15 @@
 								<input type="text" class="search-query" placeholder="Search">
 							</form>
 						</li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-								<i class="icon-user"></i> Admin <b class="caret"></b>
-							</a>
-							<ul class="dropdown-menu">
-								<li><a href="javascript:;">Profile</a></li>
-								<li><a href="javascript:;">Logout</a></li>
-							</ul>
-						</li>
+  						<li class="dropdown">
+  							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  								<i class="icon-user"></i> <span id="user"></span><b class="caret"></b>
+  							</a>
+  							<ul class="dropdown-menu">
+  								<li><a href="javascript:;">Profile</a></li>
+  								<li><a id="logout" href="javascript:;">Logout</a></li>
+  							</ul>
+  						</li>
 					</ul>
 				</div><!--/.nav-collapse -->
 			</div><!-- /container -->
@@ -335,6 +336,11 @@
 	<script src="js/bootstrap.js"></script>
 	<script>
 		$('#kategori>li>a').before('<input type="checkbox" class="checkboxKategori" id="jakarta" value="jakarta">')
+  		$('#user').text(getCookie('username').replace(/\+/g, ' '));
+  		$('#logout').on('click', function(){ 
+  			document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
+  			window.location.href='login.html' 
+  		});
 	</script>
 </body>
 </html>
