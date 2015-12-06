@@ -9,12 +9,23 @@ $(document).ready(function(){
 	var modal = $('.modal-body');
 	for(var i=0; i<kota.length; i++){
 		for(var j=0; j<kota[i].length; j++){
-			modal.eq(i).append('<button type="button" class="btn btn-default" style="margin: 1px 3px;">'+kota[i][j]+'</button>');
+			modal.eq(i).append('<button type="button" class="modali btn btn-default" style="margin: 2px 5px;">'+kota[i][j]+'</button>');
 		}
 	}
 
 
-	$('.btn.btn-default').on('click', function(){
-		$(this).toggleClass('btn btn-primary');
+	$('.modali.btn.btn-default').on('click', function(){
+		var ini = $(this).attr('class');
+		if(/default/.test(ini)){
+			$(this).removeClass('btn-default');
+			$(this).addClass('btn-primary');
+		}else{
+			$(this).removeClass('btn-primary');
+			$(this).addClass('btn-default');
+		}
+	})
+
+	$('.btn.btn-primary').on('click', function(){
+		//select all seleccteed
 	})
 })
