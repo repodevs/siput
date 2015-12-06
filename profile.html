@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Profile</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600" rel="stylesheet">
+	<link href="css/font-awesome.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+				</a>
+				<a class="brand" href="index.html">Halaman Kerja </a>
+				<div class="nav-collapse">
+					<ul class="nav pull-right">
+						<li>
+							<form class="navbar-search pull-right">
+								<input type="text" class="search-query" placeholder="Search">
+							</form>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<i class="icon-user"></i> Admin <b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="javascript:;">Profile</a></li>
+								<li><a href="javascript:;">Logout</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div><!-- /container -->
+		</div><!-- /navbar-inner -->
+	</div><!-- /navbar -->
+	<div class="subnavbar">
+		<div class="subnavbar-inner">
+			<div class="container">
+				<ul class="mainnav">
+					<li><a href="index.html"><i class="icon-dashboard"></i><span>Dashboard</span> </a> </li>
+					<li><a href="reports.html"><i class="icon-list-alt"></i><span>Reports</span> </a> </li>
+					<li class="active"><a href="feeedback.html"><i class="icon-bar-chart"></i><span>Feedback</span> </a> </li>
+					<li><a href="faq.html"><i class="icon-facetime-video"></i><span>FAQ</span> </a></li>
+					<li><a href="#"><i class="icon-code"></i><span>Dummy</span> </a></li>
+					<li><a href="#"><i class="icon-code"></i><span>Dummy</span> </a> </li>
+				</ul>
+			</div><!-- /container -->
+		</div><!-- /subnavbar-inner -->
+	</div><!-- /subnavbar -->
+	
+	<div class="main">
+		<div class="main-inner">
+			<div class="container">
+				<div class="row">
+					<div class="span3">
+						<div class="widget">
+							<div class="widget-header"> <i class="icon-bookmark"></i>
+								<h3>Kategori</h3>
+							</div>
+							<div class="widget-content">
+							<ul id="kategori">
+								<li><a>Jalan</a></li>
+								<li><a>Gedung</a></li>
+								<li><a>jembatan</a></li>
+							</ul>
+							</div>
+						</div>
+						
+						<div class="widget">
+							<div class="widget-header"> <i class="icon-bookmark"></i>
+								<h3>Daerah</h3>
+							</div>
+							<div class="widget-content">
+							<ul id="kategoriKota">
+								<li><a data-toggle="modal" href="#provJakarta">Jakarta</a></li>
+								<li><a data-toggle="modal" href="#provJabar">Jawa Barat</a></li>
+								<li><a data-toggle="modal" href="#provJateng">Jawa Tengah</a></li>
+								<li><a data-toggle="modal" href="#provJatim">Jawa Timur</a></li>
+								<li><a data-toggle="modal" href="#provYogya">Yogyakarta</a></li>
+							</ul>
+							</div>
+						</div>
+					</div>
+					
+					<!--modal Jakarta-->
+					<div class="modal fade" id="provJakarta" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h4 class="modal-title">Provinsi Jakarta</h4>
+								</div>
+								<div class="modal-body">
+									...
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									<button type="button" class="btn btn-primary">Save</button>
+								</div>
+							</div><!-- /.modal-content -->
+						</div><!-- /.modal-dialog -->
+					</div><!-- /.modal Jakarta-->
+					
+					<!--modal provJabar-->
+					<div class="modal fade" id="provJabar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h4 class="modal-title">Provinsi Jawa Barat</h4>
+								</div>
+								<div class="modal-body">
+									...
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									<button type="button" class="btn btn-primary">Save</button>
+								</div>
+							</div><!-- /.modal-content -->
+						</div><!-- /.modal-dialog -->
+					</div><!-- /.modal provJabar-->
+					
+					<!--modal provJateng-->
+					<div class="modal fade" id="provJateng" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h4 class="modal-title">Provinsi Jawa Tengah</h4>
+								</div>
+								<div class="modal-body">
+									...
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									<button type="button" class="btn btn-primary">Save</button>
+								</div>
+							</div><!-- /.modal-content -->
+						</div><!-- /.modal-dialog -->
+					</div><!-- /.modal provJateng-->
+					
+					<!--modal provJatim-->
+					<div class="modal fade" id="provJatim" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h4 class="modal-title">Provinsi Jawa Timur</h4>
+								</div>
+								<div class="modal-body">
+									...
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									<button type="button" class="btn btn-primary">Save</button>
+								</div>
+							</div><!-- /.modal-content -->
+						</div><!-- /.modal-dialog -->
+					</div><!-- /.modal provJatim-->
+					
+					<!--modal provYogya-->
+					<div class="modal fade" id="provYogya" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h4 class="modal-title">Provinsi Yogyakarta</h4>
+								</div>
+								<div class="modal-body">
+									...
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									<button type="button" class="btn btn-primary">Save</button>
+								</div>
+							</div><!-- /.modal-content -->
+						</div><!-- /.modal-dialog -->
+					</div><!-- /.modal provYogya-->
+					
+					<div class="span9">
+						<div class="widget widget-nopad">
+							<div class="widget-header"> <i class="icon-list-alt"></i>
+								<h3>Profile <b>Paijo</b></h3>
+							</div><!-- /widget-header -->
+							<div class="widget-content">
+<br>
+							  <div class="text-center" align="center">
+							      <img src="img/img1.jpg" alt="profile" style="max-height:200px;">
+							  </div>
+<div class="clear"></div>
+<br>
+								<div class="table-responsive">
+									<table class="table table-bordered">
+										<tr>
+											<td class="col-md-2">Nama</td>
+											<td>asbdabd</td>
+										</tr>
+									</table>
+								</div>
+
+							</div><!-- /widget-content --> 
+						</div><!-- /widget -->
+						
+					</div><!-- /span9 --> 
+				</div><!-- /row --> 
+			</div><!-- /container --> 
+		</div><!-- /main-inner --> 
+	</div>
+	
+	<div class="footer">
+		<div class="footer-inner">
+			<div class="container">
+				<div class="row">
+					<div class="span12">
+						&copy; 2013 <a href="http://www.egrappler.com/">Bootstrap Responsive Admin Template</a>.
+					</div><!-- /span12 -->
+				</div><!-- /row -->
+			</div><!-- /container -->
+		</div><!-- /footer-inner -->
+	</div><!-- /footer -->
+	
+	<!-- javascript -->
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script>
+		$('#kategori>li>a').before('<input type="checkbox" class="checkboxKategori" id="jakarta" value="jakarta">')
+	</script>
+</body>
+</html>
