@@ -80,7 +80,7 @@
 				</div>
 				<!-- /widget-header -->
 				<div class="widget-content">
-				<form role="form">
+				<form role="form" method="POST" enctype="multipart/form-data" action="post.html">
 					<div class="row-fluid">
 						<div class="span6">
 							<div class="form-group full-width">
@@ -168,7 +168,11 @@
 							</div>
 							<div class="form-group">
 								<label for="lampiran">File Lampiran</label>
-								<input type="file" id="lampiran">
+								<input type="file" id="lampiran" name="lampiran[]" multiple>
+							</div>
+							<div class="form-group">
+								<label for="photo">Photo</label>
+								<input type="file" id="photo" name="photo[]" multiple>
 							</div>
 						</div>
 
@@ -181,11 +185,6 @@
 							</div>
 							<br>
 							<br>
-<!-- 							<div class="checkbox">
-								<label>
-									<input type="checkbox" name="status" checked=""> Publish Sekarang
-								</label>
-							</div> -->
 
 							<button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
 							<button type="reset" class="btn btn-danger btn-lg btn-block">Reset</button>
