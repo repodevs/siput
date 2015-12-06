@@ -3,7 +3,7 @@ $(document).ready(function() {
 	
 	$('#sendFeed').on('click', function(){
 		var message = $('#inMsg').val();
-		if(message!=''){	
+		if(message.trim()!=''){	
 			var feed = '				<li class="from_user left">'
 										+'<a href="#" class="avatar"><img src="img/message_avatar1.png"/></a>'
 											+'<div class="message_wrap"> <span class="arrow"></span>'
@@ -22,6 +22,7 @@ $(document).ready(function() {
 											+'</div>'
 										+'</li>';
 			$('#messages_layout').prepend(feed);
+			$('#inMsg').val('');
 		}
 	});
 });
