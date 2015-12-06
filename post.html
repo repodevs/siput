@@ -176,8 +176,8 @@
 										<div class="widget big-stats-container">
 											<div class="widget-content">
 												<div id="big_stats" class="cf">
-													<div class="stat-user"> <i class="icon-thumbs-up-alt"></i> <span class="value">321</span> </div>
-													<div class="stat-user"> <i class="icon-thumbs-down-alt"></i> <span class="value">123</span> </div>
+													<div class="stat-user"> <i id="like" class="icon-thumbs-up-alt"></i> <span class="value">321</span> </div>
+													<div class="stat-user"> <i id="dislike" class="icon-thumbs-down-alt"></i> <span class="value">123</span> </div>
 												</div>
 											</div>
 											<!-- /widget-content -->
@@ -371,11 +371,11 @@
 			});
 
 			$('.stat-user:first-child').one('click', function(){
-				$('.vote-post').html('(Anda telah menyukai pembangunan ini)')
+				$('.vote-post').html('( Anda telah menyukai pembangunan ini... )')
 			});
 			
 			$('.stat-user:last-child').one('click', function(){
-				$('.vote-post').html('(Anda tidak lagi menyukai pembangunan)')
+				$('.vote-post').html('( Anda tidak lagi menyukai pembangunan ini... )')
 			});
 		});
 	</script>

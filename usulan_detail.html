@@ -18,6 +18,7 @@
     <link href="css/owl.carousel.css" rel="stylesheet">
     <link href="css/owl.theme.css" rel="stylesheet">
     <link href="css/owl.transitions.css" rel="stylesheet">
+    <script src="js/function.js"></script>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -144,6 +145,11 @@
   	<script src="js/feedback.js"></script>
 
 	<script>
+  		$('#user').text(getCookie('username').replace(/\+/g, ' '));
+  		$('#logout').on('click', function(){ 
+  			document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
+  			window.location.href='login.html' 
+  		});
 		$(document).ready(function() {
 
 			$("#owl").owlCarousel({
