@@ -65,88 +65,164 @@
 		<div class="main-inner">
 			<div class="container">
 				<div class="row">
-					<div class="span6">
+					<div class="span3">
 						<div class="widget">
-							<div class="widget-header">
-								<i class="icon-bar-chart"></i>
-								<h3>Bar Chart</h3>
+							<div class="widget-header"> <i class="icon-bookmark"></i>
+								<h3>Kategori</h3>
 							</div>
-							<!-- /widget-header -->
 							<div class="widget-content">
-								<canvas id="bar-chart" class="chart-holder" width="538" height="250">
-								</canvas>
-								<!-- /bar-chart -->
+							<ul id="kategori">
+								<li><a>Jalan</a></li>
+								<li><a>Gedung</a></li>
+								<li><a>jembatan</a></li>
+							</ul>
 							</div>
-							<!-- /widget-content -->
 						</div>
-						<!-- /widget -->
+						
 						<div class="widget">
-							<div class="widget-header">
-								<i class="icon-bar-chart"></i>
-								<h3>Line Chart</h3>
+							<div class="widget-header"> <i class="icon-bookmark"></i>
+								<h3>Daerah</h3>
 							</div>
-							<!-- /widget-header -->
 							<div class="widget-content">
-								<canvas id="area-chart" class="chart-holder" width="538" height="250">
-								</canvas>
-								<!-- /line-chart -->
+							<ul id="kategoriKota">
+								<li><a data-toggle="modal" href="#provJakarta">Jakarta</a></li>
+								<li><a data-toggle="modal" href="#provJabar">Jawa Barat</a></li>
+								<li><a data-toggle="modal" href="#provJateng">Jawa Tengah</a></li>
+								<li><a data-toggle="modal" href="#provJatim">Jawa Timur</a></li>
+								<li><a data-toggle="modal" href="#provYogya">Yogyakarta</a></li>
+							</ul>
 							</div>
-							<!-- /widget-content -->
 						</div>
-						<!-- /widget -->
-						<div class="widget">
-							<div class="widget-header">
-								<i class="icon-bar-chart"></i>
-								<h3>Pie Chart</h3>
-							</div>
-							<!-- /widget-header -->
-							<div class="widget-content">
-								<canvas id="pie-chart" class="chart-holder" width="538" height="250">
-								</canvas>
-								<!-- /pie-chart -->
-							</div>
-							<!-- /widget-content -->
-						</div>
-						<!-- /widget -->
 					</div>
-					<!-- /span6 -->
-					<div class="span6">
-						<div class="widget">
-							<div class="widget-header">
-								<i class="icon-bar-chart"></i>
-								<h3>Donut Chart</h3>
-							</div>
-							<!-- /widget-header -->
-							<div class="widget-content">
-								<canvas id="donut-chart" class="chart-holder" width="538" height="250">
-								</canvas>
-								<!-- /bar-chart -->
-							</div>
-							<!-- /widget-content -->
+					
+					<div class="span9">
+						<div class="widget widget-nopad">
+							<div class="widget-header"> <i class="icon-list-alt"></i>
+								<h3> User Feedback</h3>
+							</div><!-- /widget-header -->
+							<div class="widget-content user-feedback">
+								<ul class="messages_layout">
+										<li class="from_user left"> <a href="#" class="avatar"><img src="img/message_avatar1.png"/></a>
+											<div class="message_wrap"> <span class="arrow"></span>
+												<div class="info"> <a class="name">Paijo</a> <span class="time">1 hour ago</span>
+													<div class="options_arrow">
+														<div class="dropdown pull-right"> <a class="dropdown-toggle " id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#"> <i class=" icon-caret-down"></i> </a>
+															<ul class="dropdown-menu " role="menu" aria-labelledby="dLabel">
+																<li><a href="#"><i class="icon-star icon-large"></i> Favorit</a></li>
+																<li><a href="#"><i class="icon-share-alt icon-large"></i> Reply</a></li>
+																<li><a href="#"><i class="icon-remove icon-large"></i>  Report</a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="text"> Mantap ini yang di daerah ini. Pembangunannya sesuai lah sama biayanya. Lanjutkan pak dan terima kasih atas pembangunan nya, sekarang jalan nya sudah jadi nyaman</div>
+											</div>
+										</li>
+										
+										<li class="from_user left"> <a href="#" class="avatar"><img src="img/message_avatar1.png"/></a>
+											<div class="message_wrap"> <span class="arrow"></span>
+												<div class="info"> <a class="name">Hikki</a> <span class="time">1 hour ago</span>
+													<div class="options_arrow">
+														<div class="dropdown pull-right"> <a class="dropdown-toggle " id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#"> <i class=" icon-caret-down"></i> </a>
+															<ul class="dropdown-menu " role="menu" aria-labelledby="dLabel">
+																<li><a href="#"><i class="icon-star icon-large"></i> Favorit</a></li>
+																<li><a href="#"><i class="icon-share-alt icon-large"></i> Reply</a></li>
+																<li><a href="#"><i class="icon-remove icon-large"></i>  Report</a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="text"> Wahh... apa-apaan ini, masak pembangunan gedung kayak gini ngabisin nyampe 1 milyar.</div>
+											</div>
+										</li>
+										
+										<li class="from_user left"> <a href="#" class="avatar"><img src="img/message_avatar2.png"/></a>
+											<div class="message_wrap"> <span class="arrow"></span>
+												<div class="info"> <a class="name">Mark Jobs </a> <span class="time">2 Days ago</span>
+													<div class="options_arrow">
+														<div class="dropdown pull-right"> <a class="dropdown-toggle " id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#"> <i class=" icon-caret-down"></i> </a>
+															<ul class="dropdown-menu " role="menu" aria-labelledby="dLabel">
+																<li><a href="#"><i class="icon-star icon-large"></i> Favorit</a></li>
+																<li><a href="#"><i class="icon-share-alt icon-large"></i> Reply</a></li>
+																<li><a href="#"><i class="icon-remove icon-large"></i>  Report</a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="text"> Itu pembangunan jembatan kancil cepetan diselesain pak masak dana udah segitu masih blm selesai, atau jangan-jangan lari entah kemana dananya?</div>
+											</div>
+										</li>
+										
+										<li class="from_user left"> <a href="#" class="avatar"><img src="img/message_avatar1.png"/></a>
+											<div class="message_wrap"> <span class="arrow"></span>
+												<div class="info"> <a class="name">Smith</a> <span class="time">1 hour ago</span>
+													<div class="options_arrow">
+														<div class="dropdown pull-right"> <a class="dropdown-toggle " id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#"> <i class=" icon-caret-down"></i> </a>
+															<ul class="dropdown-menu " role="menu" aria-labelledby="dLabel">
+																<li><a href="#"><i class="icon-star icon-large"></i> Favorit</a></li>
+																<li><a href="#"><i class="icon-share-alt icon-large"></i> Reply</a></li>
+																<li><a href="#"><i class="icon-remove icon-large"></i>  Report</a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="text"> Bagus ini, udah sip pokoknya, like lah :)</div>
+											</div>
+										</li>
+										
+										<li class="from_user left"> <a href="#" class="avatar"><img src="img/message_avatar1.png"/></a>
+											<div class="message_wrap"> <span class="arrow"></span>
+												<div class="info"> <a class="name">Hanomin </a> <span class="time">1 Day ago</span>
+													<div class="options_arrow">
+														<div class="dropdown pull-right"> <a class="dropdown-toggle " id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#"> <i class=" icon-caret-down"></i> </a>
+															<ul class="dropdown-menu " role="menu" aria-labelledby="dLabel">
+																<li><a href="#"><i class="icon-star icon-large"></i> Favorit</a></li>
+																<li><a href="#"><i class="icon-share-alt icon-large"></i> Reply</a></li>
+																<li><a href="#"><i class="icon-remove icon-large"></i>  Report</a></li>
+
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="text"> Ini dana nya kok kayaknya ga seimbang ya sama pembangunan nya, jembatan gitu doank masak sampai 2 milyar sih?</div>
+											</div>
+										</li>
+										
+										<li class="from_user left"> <a href="#" class="avatar"><img src="img/message_avatar2.png"/></a>
+											<div class="message_wrap"> <span class="arrow"></span>
+												<div class="info"> <a class="name">Sukisuk </a> <span class="time">2 Days ago</span>
+													<div class="options_arrow">
+														<div class="dropdown pull-right"> <a class="dropdown-toggle " id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#"> <i class=" icon-caret-down"></i> </a>
+															<ul class="dropdown-menu " role="menu" aria-labelledby="dLabel">
+																<li><a href="#"><i class="icon-star icon-large"></i> Favorit</a></li>
+																<li><a href="#"><i class="icon-share-alt icon-large"></i> Reply</a></li>
+																<li><a href="#"><i class="icon-remove icon-large"></i>  Report</a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="text"> Keren pak...!! lanjut...!! Like...!!</div>
+											</div>
+										</li>
+									</ul>
+									<!--/this is comment-->
+							</div><!-- /widget-content --> 
+						</div><!-- /widget -->
+						<div>
+							<!--Pagination-->
+							<ul class="pagination">
+								<li><a href="#">&laquo;</a></li>
+								<li class="active"><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">&raquo;</a></li>
+							</ul>
 						</div>
-						<!-- /widget -->
-						<div class="widget">
-							<div class="widget-header">
-								<i class="icon-bar-chart"></i>
-								<h3>A Chart</h3>
-							</div>
-							<!-- /widget-header -->
-							<div class="widget-content">
-								<canvas id="line-chart" class="chart-holder" width="538" height="250">
-								</canvas>
-								<!-- /-chart -->
-							</div>
-							<!-- /widget-content -->
-						</div>
-						<!-- /widget -->
-					</div>
-					<!-- /span6 -->
-				</div>
-				<!-- /row -->
-			</div>
-			<!-- /container -->
-		</div>
-		<!-- /main-inner -->
+						
+					</div><!-- /span9 --> 
+				</div><!-- /row --> 
+			</div><!-- /container --> 
+		</div><!-- /main-inner --> 
 	</div>
 	
 	<div class="footer">
@@ -164,5 +240,8 @@
 	<!-- javascript -->
 	<script src="js/jquery-1.7.2.min.js"></script>
 	<script src="js/bootstrap.js"></script>
+	<script>
+		$('#kategori>li>a').before('<input type="checkbox" class="checkboxKategori" id="jakarta" value="jakarta">')
+	</script>
 </body>
 </html>
