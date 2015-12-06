@@ -1500,3 +1500,19 @@ color: #333;
 	padding: 2px 5px;
 	text-align: center;
 }
+
+#inputAnggaran{
+	width: 100%;
+	background-color: #00ba8b;
+	color: white;
+	text-align: center;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+	padding: 12px 0;
+	margin-bottom: 20px;
+}
+#inputAnggaran:hover {
+	background-color: #008866;
+	text-decoration: none;
+}
