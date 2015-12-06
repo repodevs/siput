@@ -14,7 +14,7 @@
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600" rel="stylesheet">
 	<link href="css/font-awesome.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
-	<link href="css/pages/reports.css" rel="stylesheet">
+	<link href="css/pages/dashboard.css" rel="stylesheet">
 
 	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 	<!--[if lt IE 9]>
@@ -61,172 +61,245 @@
 				<ul class="mainnav">
 					<li><a href="index.html"><i class="icon-dashboard"></i><span>Dashboard</span> </a> </li>
 					<li class="active"><a href="reports.html"><i class="icon-list-alt"></i><span>Reports</span> </a> </li>
-					<li><a href="charts.html"><i class="icon-bar-chart"></i><span>Charts</span> </a> </li>
+					<li><a href="feeedback.html"><i class="icon-bar-chart"></i><span>Feedback</span> </a> </li>
 					<li><a href="faq.html"><i class="icon-facetime-video"></i><span>FAQ</span> </a></li>
-					<li><a href="shortcodes.html"><i class="icon-code"></i><span>Shortcodes</span> </a> </li>
+					<li><a href="#"><i class="icon-code"></i><span>Dummy</span> </a></li>
+					<li><a href="#"><i class="icon-code"></i><span>Dummy</span> </a> </li>
 				</ul>
 			</div>
 			<!-- /container -->
 		</div>
 		<!-- /subnavbar-inner -->
 	</div>
-	<!-- /subnavbar -->   
-<div class="main">
-	<div class="main-inner">
-		<div class="container">
-			<div class="row">
-				<div class="span12">
-					<div class="info-box">
-						<div class="row-fluid stats-box">
-							<div class="span4">
-								<div class="stats-box-title">Vizitor</div>
-								<div class="stats-box-all-info">
-									<i class="icon-user" style="color:#3366cc;"></i> 555K
-								</div>
-								<div class="wrap-chart">
-									<div id="visitor-stat" class="chart" style="padding: 0px; position: relative;">
-										<canvas id="bar-chart1" class="chart-holder" height="150" width="325"></canvas>
-									</div>
-								</div>
+	<!-- /subnavbar -->
+
+	<div class="main">
+		<div class="main-inner">
+			<div class="container">
+				<div class="row">
+					<div class="span3">
+						
+						<div class="widget">
+							<div class="widget-header"> <i class="icon-bookmark"></i>
+								<h3>Kategori</h3>
 							</div>
-
-							<div class="span4">
-								<div class="stats-box-title">Likes</div>
-								<div class="stats-box-all-info">
-									<i class="icon-thumbs-up" style="color:#F30"></i> 66.66
-								</div>
-								<div class="wrap-chart">
-									<div id="order-stat" class="chart" style="padding: 0px; position: relative;">
-										<canvas id="bar-chart2" class="chart-holder" height="150" width="325"></canvas>
-									</div>
-								</div>
+							<div class="widget-content">
+							<ul id="kategori">
+								<li><a>Jalan</a></li>
+								<li><a>Gedung</a></li>
+								<li><a>jembatan</a></li>
+							</ul>
 							</div>
-
-							<div class="span4">
-								<div class="stats-box-title">Orders</div>
-								<div class="stats-box-all-info">
-									<i class="icon-shopping-cart" style="color:#3C3"></i> 15.55
-								</div>
-								<div class="wrap-chart">
-
-									<div id="user-stat" class="chart" style="padding: 0px; position: relative;">
-										<canvas id="bar-chart3" class="chart-holder" height="150" width="325"></canvas>
-									</div>
-
-								</div>
+						</div>
+						
+						<div class="widget">
+							<div class="widget-header"> <i class="icon-bookmark"></i>
+								<h3>Daerah</h3>
+							</div>
+							<div class="widget-content">
+							<ul id="kategoriKota">
+								<li><a data-toggle="modal" href="#provJakarta">Jakarta</a></li>
+								<li><a data-toggle="modal" href="#provJabar">Jawa Barat</a></li>
+								<li><a data-toggle="modal" href="#provJateng">Jawa Tengah</a></li>
+								<li><a data-toggle="modal" href="#provJatim">Jawa Timur</a></li>
+								<li><a data-toggle="modal" href="#provYogya">Yogyakarta</a></li>
+							</ul>
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
+					
+					<!--modal Jakarta-->
+					<div class="modal fade" id="provJakarta" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title">Provinsi Jakarta</h4>
+								</div>
+								<div class="modal-body">
+									...
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									<button type="button" class="btn btn-primary">Save</button>
+								</div>
+							</div><!-- /.modal-content -->
+						</div><!-- /.modal-dialog -->
+					</div><!-- /.modal Jakarta-->
+					
+					<!--modal provJabar-->
+					<div class="modal fade" id="provJabar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title">Provinsi Barat</h4>
+								</div>
+								<div class="modal-body">
+									...
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									<button type="button" class="btn btn-primary">Save</button>
+								</div>
+							</div><!-- /.modal-content -->
+						</div><!-- /.modal-dialog -->
+					</div><!-- /.modal provJabar-->
+					
+					<!--modal provJateng-->
+					<div class="modal fade" id="provJateng" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title">Provinsi Tengah</h4>
+								</div>
+								<div class="modal-body">
+									...
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									<button type="button" class="btn btn-primary">Save</button>
+								</div>
+							</div><!-- /.modal-content -->
+						</div><!-- /.modal-dialog -->
+					</div><!-- /.modal provJateng-->
+					
+					<!--modal provJatim-->
+					<div class="modal fade" id="provJatim" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title">Provinsi Jawa Timur</h4>
+								</div>
+								<div class="modal-body">
+									...
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									<button type="button" class="btn btn-primary">Save</button>
+								</div>
+							</div><!-- /.modal-content -->
+						</div><!-- /.modal-dialog -->
+					</div><!-- /.modal provJatim-->
+					
+					<!--modal provYogya-->
+					<div class="modal fade" id="provYogya" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title">Provinsi Yogyakarta</h4>
+								</div>
+								<div class="modal-body">
+									...
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									<button type="button" class="btn btn-primary">Save</button>
+								</div>
+							</div><!-- /.modal-content -->
+						</div><!-- /.modal-dialog -->
+					</div><!-- /.modal provYogya-->
+					
+					
+					<div class="span9">
+						<div class="widget widget-nopad">
+							<div class="widget-header"> <i class="icon-list-alt"></i>
+								<h3> Recent News</h3>
+							</div><!-- /widget-header -->
+							<div class="widget-content">
+								<ul class="news-items">
+									<li>
 
-			<!-- /row -->
+										<div class="news-item-date"> <span class="news-item-day">29</span> <span class="news-item-month">Aug</span> </div>
+										<div class="news-item-detail"> <a href="post.html" class="news-item-title" target="_blank">Thursday Roundup # 40</a>
+											<p class="news-item-preview"> This is our web design and development news series where we share our favorite design/development related articles, resources, tutorials and awesome freebies. </p>
+										</div>
 
-			<div class="row">
-				<div class="span6">
-					<div class="widget">
-						<div class="widget-header">
-							<i class="icon-star"></i>
-							<h3>Some Stats</h3>
-						</div>
-						<!-- /widget-header -->
-						<div class="widget-content">
-							<canvas id="pie-chart" class="chart-holder" height="250" width="538"></canvas>
-						</div>
-						<!-- /widget-content -->
-					</div>
-					<!-- /widget -->
-				</div>
-				<!-- /span6 -->
+									</li>
+									
+									<li>
 
-				<div class="span6">
-					<div class="widget">
-						<div class="widget-header">
-							<i class="icon-list-alt"></i>
-							<h3>Another Chart</h3>
-						</div>
-						<!-- /widget-header -->
-						<div class="widget-content">
-							<canvas id="bar-chart" class="chart-holder" height="250" width="538"></canvas>
-						</div>
-						<!-- /widget-content -->
-					</div>
-					<!-- /widget -->
-				</div>
-				<!-- /span6 -->
-			</div>
-			<!-- /row -->
-		</div>
-		<!-- /container -->
-	</div>
-	<!-- /main-inner -->
-</div>
-<!-- /main -->
-    
-    
-<div class="footer">
-	<div class="footer-inner">
-		<div class="container">
-			<div class="row">
-    			<div class="span12">
-    				&copy; 2013 <a href="http://www.egrappler.com/">Bootstrap Responsive Admin Template</a>.
-    			</div> <!-- /span12 -->
-    		</div> <!-- /row -->
-		</div> <!-- /container -->
-	</div> <!-- /footer-inner -->
-</div> <!-- /footer -->
-    
+										<div class="news-item-date"> <span class="news-item-day">29</span> <span class="news-item-month">Aug</span> </div>
+										<div class="news-item-detail"> <a href="post.html" class="news-item-title" target="_blank">Thursday Roundup # 40</a>
+											<p class="news-item-preview"> This is our web design and development news series where we share our favorite design/development related articles, resources, tutorials and awesome freebies. </p>
+										</div>
 
-<script src="js/jquery-1.7.2.min.js"></script>
-<script src="js/excanvas.min.js"></script>
-<script src="js/chart.min.js" type="text/javascript"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/base.js"></script>
-<script>
+									</li>
+									
+									<li>
 
-    var pieData = [
-				{
-				    value: 30,
-				    color: "#F38630"
-				},
-				{
-				    value: 50,
-				    color: "#E0E4CC"
-				},
-				{
-				    value: 100,
-				    color: "#69D2E7"
-				}
+										<div class="news-item-date"> <span class="news-item-day">15</span> <span class="news-item-month">Jun</span> </div>
+										<div class="news-item-detail"> <a href="post.html" class="news-item-title" target="_blank">Retina Ready Responsive App Landing Page Website Template – App Landing</a>
+											<p class="news-item-preview"> App Landing is a retina ready responsive app landing page website template perfect for software and application developers and small business owners looking to promote their iPhone, iPad, Android Apps and software products.</p>
+										</div>
 
-			];
+									</li>
+									<li>
 
-    var myPie = new Chart(document.getElementById("pie-chart").getContext("2d")).Pie(pieData);
+										<div class="news-item-date"> <span class="news-item-day">29</span> <span class="news-item-month">Oct</span> </div>
+										<div class="news-item-detail"> <a href="post.html" class="news-item-title" target="_blank">Open Source jQuery PHP Ajax Contact Form Templates With Captcha: Formify</a>
+											<p class="news-item-preview"> Formify is a contribution to lessen the pain of creating contact forms. The collection contains six different forms that are commonly used. These open source contact forms can be customized as well to suit the need for your website/application.</p>
+										</div>
 
-    var barChartData = {
-        labels: ["January", "February", "March", "April", "May", "June", "July"],
-        datasets: [
-				{
-				    fillColor: "rgba(220,220,220,0.5)",
-				    strokeColor: "rgba(220,220,220,1)",
-				    data: [65, 59, 90, 81, 56, 55, 40]
-				},
-				{
-				    fillColor: "rgba(151,187,205,0.5)",
-				    strokeColor: "rgba(151,187,205,1)",
-				    data: [28, 48, 40, 19, 96, 27, 100]
-				}
-			]
+									</li>
 
-    }
+									<li>
 
-    var myLine = new Chart(document.getElementById("bar-chart").getContext("2d")).Bar(barChartData);
-	var myLine = new Chart(document.getElementById("bar-chart1").getContext("2d")).Bar(barChartData);
-	var myLine = new Chart(document.getElementById("bar-chart2").getContext("2d")).Bar(barChartData);
-	var myLine = new Chart(document.getElementById("bar-chart3").getContext("2d")).Bar(barChartData);
+										<div class="news-item-date"> <span class="news-item-day">29</span> <span class="news-item-month">Oct</span> </div>
+										<div class="news-item-detail"> <a href="post.html" class="news-item-title" target="_blank">Open Source jQuery PHP Ajax Contact Form Templates With Captcha: Formify</a>
+											<p class="news-item-preview"> Formify is a contribution to lessen the pain of creating contact forms. The collection contains six different forms that are commonly used. These open source contact forms can be customized as well to suit the need for your website/application.</p>
+										</div>
+
+									</li>
+
+									<li>
+
+										<div class="news-item-date"> <span class="news-item-day">29</span> <span class="news-item-month">Oct</span> </div>
+										<div class="news-item-detail"> <a href="post.html" class="news-item-title" target="_blank">Open Source jQuery PHP Ajax Contact Form Templates With Captcha: Formify</a>
+											<p class="news-item-preview"> Formify is a contribution to lessen the pain of creating contact forms. The collection contains six different forms that are commonly used. These open source contact forms can be customized as well to suit the need for your website/application.</p>
+										</div>
+
+									</li>
+								</ul>
+							</div><!-- /widget-content --> 
+						</div><!-- /widget -->
 	
-	</script>
+					<div>
+						<!--Pagination-->
+						<ul class="pagination">
+							<li><a href="#">&laquo;</a></li>
+							<li class="active"><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">&raquo;</a></li>
+						</ul>
+					</div>
+		
+					</div><!-- /span9 --> 
+				</div><!-- /row --> 
+			</div><!-- /container --> 
+		</div><!-- /main-inner -->
+	</div>
+	
+	<div class="footer">
+		<div class="footer-inner">
+			<div class="container">
+				<div class="row">
+					<div class="span12">Arsenio - Admin.</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-
-  </body>
+<!-- Javascriptnyo --> 
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script language="javascript" type="text/javascript" src="js/full-calendar/fullcalendar.min.js"></script>  </body>
+<script>
+	$('#kategori>li>a').before('<input type="checkbox" class="checkboxKategori" id="jakarta" value="jakarta">')
+</script>
 
 </html>

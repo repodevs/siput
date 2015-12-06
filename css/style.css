@@ -1186,34 +1186,6 @@ color: #333;
 
 }
 
-/*new styling form-horizontal*/
-#kategori {
-	margin: 20px 0 0 -15px;
-	padding: 0;
-}
-#kategori li {
-	list-style: none;
-	font-size: 16px;
-	width: 110%;
-	border-top: 1px #d6d6d6 solid;
-}
-#kategori li a { 
-	margin-left: 20px;
-	padding: 12px 0;
-	display: block;
-}
-#kategori li:hover {
-	background-color: #d6d6d6;
-}
-#kategori li a:hover{
-	text-decoration: none;
-	color: white;
-}
-.shortcuts #inputAnggaran {
-	display: block;
-	width: 100%;
-	font-size: 16px;
-}
 
 /*------------------------------------------------------------------
 [3. Max Width: 979px]
@@ -1246,6 +1218,164 @@ color: #333;
 	.navbar .search-query {
 		width: 200px;
 	}
+}
+
+/*new*/
+.full-width>input {
+	width: 97%;
+}
+#kategori {
+	margin: 20px 0 0 -15px;
+	padding: 0;
+}
+#kategori li {
+	list-style: none;
+	font-size: 16px;
+	width: 110%;
+	border-top: 1px #d6d6d6 solid;
+}
+#kategori li a { 
+	margin-left: 20px;
+	padding: 12px 0;
+	display: block;
+}
+#kategori li:hover {
+	background-color: #d6d6d6;
+}
+#kategori li a:hover{
+	text-decoration: none;
+	color: white;
+}
+.shortcuts #inputAnggaran {
+	display: block;
+	width: 100%;
+	font-size: 16px;
+}
+#kategori>li {
+	position: relative;
+}
+#kategori>li>a {
+	padding-left: 20px;
+}
+#kategori {
+	margin-top: -20px;
+}
+
+/*kategoriKota*/
+#kategoriKota {
+	margin: 20px 0 0 -15px;
+	padding: 0;
+}
+#kategoriKota li {
+	list-style: none;
+	font-size: 16px;
+	width: 110%;
+	border-top: 1px #d6d6d6 solid;
+}
+#kategoriKota li a { 
+	margin-left: 20px;
+	padding: 12px 0;
+	display: block;
+}
+#kategoriKota li:hover {
+	background-color: #d6d6d6;
+}
+#kategoriKota li a:hover{
+	text-decoration: none;
+	color: white;
+}
+#kategoriKota {
+	margin-top: -20px;
+}
+
+/*just checkbox*/
+.checkboxKategori {
+	position: absolute;
+	top: 12px;
+	left: 15px;
+}
+
+/*slide*/
+#owl .owl-item div{
+  padding:5px;
+}
+#owl .owl-item img{
+  display: block;
+  width: 100%;
+  height: auto;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+
+/*------------------------------------------------------------------
+[Cutting News Item / .news-items]
+*/
+
+.news-items {
+	margin: 1em 0 0;
+}
+
+.news-items li {
+	display: table;
+	padding: 0 2em 0 1.5em;
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+	border-bottom: 1px dotted #CCC;
+}
+
+.news-items li:last-child { padding-bottom: 0; border: none; }
+
+.news-item-date {
+	display: table-cell;
+}
+
+.news-item-detail {
+	display: table-cell;
+}
+
+.news-item-title {
+	font-size: 13px;
+	font-weight: 600;
+}
+
+.news-item-date {
+	width: 75px;
+	vertical-align: middle;
+	text-align: center;
 	
 }
 
+.news-item-day {
+	display: block;
+	margin-bottom: .25em;
+	
+	font-size: 24px;
+	color: #888;
+}
+
+.news-item-preview {
+	margin-bottom: 0;
+	
+	color: #777;
+}
+
+.news-item-month {
+	display: block;
+	padding-right: 1px;	
+	
+	font-size: 12px;
+	font-weight: 600;
+	color: #888;
+}
+
+/*panel*/
+.paginationComment {
+	margin-top: 12px;
+}
+
+/*ketrangan post*/
+.keterangan-post {
+	
+}
