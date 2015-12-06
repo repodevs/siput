@@ -1379,3 +1379,32 @@ color: #333;
 .keterangan-post {
 	
 }
+
+.user-feedback ul {
+	margin: 15px;
+}
+
+.voting>button {
+	display: inline-block;
+	font-weight: bold;
+	color: white;
+	width: 49%;
+	padding: 10px 20px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+.btn-like {
+	background-color: #1E88E5;
+	margin-right: 1%;
+}
+.btn-like:hover {
+	background-color: #0D47A1;
+}
+.btn-dislike {
+	background-color: #EF5350;
+}
+.btn-dislike:hover {
+	background-color: #B71C1C;
+}
