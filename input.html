@@ -80,66 +80,117 @@
 				</div>
 				<!-- /widget-header -->
 				<div class="widget-content">
-				<div class="row-fluid">
-					<div class="span6">
-						<form role="form">
+				<form role="form">
+					<div class="row-fluid">
+						<div class="span6">
 							<div class="form-group full-width">
-								<label for="exampleInputEmail1">Email address</label>
-								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+								<label for="nama_proyek">Nama Proyek</label>
+								<input type="text" name="nama_proyek" class="form-control" id="nama_proyek" placeholder="Pembangunan Jalan mondokan-sumberlawang">
 							</div>
 							<div class="form-group full-width">
-								<label for="exampleInputEmail1">Email address</label>
-								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+								<label for="provinsi">Provinsi</label>
+								<select name="provinsi" class="form-control">
+									<option>Jawa Barat</option>
+									<option selected="">Jawa Tengah</option>
+									<option>Jawa Timur</option>
+								</select>
 							</div>
 							<div class="form-group full-width">
-								<label for="exampleInputEmail1">Email address</label>
-								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+								<label for="lpse">LPSE</label>
+								<input type="text" name="lpse" class="form-control" id="lpse" placeholder="LPSE Kabupaten Sragen">
 							</div>
 							<div class="form-group full-width">
-								<label for="exampleInputEmail1">Email address</label>
-								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+								<label for="komite">Komite</label>
+								<input type="text" name="komite" class="form-control" id="komite" placeholder="PANITIA ULP KABUPATEN SRAGEN TAHUN 2015">
 							</div>
 							<div class="form-group full-width">
-								<label for="exampleInputEmail1">Email address</label>
-								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+								<label for="kode_proyek">Kode Proyek</label>
+								<input type="text" class="form-control" id="kode_proyek" placeholder="985228">
 							</div>
 							<div class="form-group full-width">
-								<label for="exampleInputEmail1">Email address</label>
-								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-							</div>
-						</form>
-					</div>
-					<div class="span6">
-						<form role="form">
-							<div class="form-group full-width">
-								<label for="exampleInputEmail1">Email address</label>
-								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+								<label for="mulai">Mulai</label>
+								<input type="date" class="form-control" id="mulai" placeholder="02-05-2015">
 							</div>
 							<div class="form-group full-width">
-								<label for="exampleInputEmail1">Email address</label>
-								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+								<label for="provider">Provider</label>
+								<input type="text" class="form-control" id="provider" placeholder="CV.QYAJAYA VALENT">
 							</div>
 							<div class="form-group full-width">
-								<label for="exampleInputEmail1">Email address</label>
-								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+								<label for="budget">Budget</label>
+								<input type="text" class="form-control" id="budget" placeholder="325.000.000">
 							</div>
 							<div class="form-group full-width">
-								<label for="exampleInputPassword1">Password</label>
-								<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+								<label for="cost">Cost</label>
+								<input type="text" class="form-control" id="cost" placeholder="325.000.000">
+							</div>
+						</div>
+
+						<div class="span6">
+							<div class="form-group full-width">
+								<label for="exampleInputEmail1">Category</label>
+								<select>
+									<option selected>Jalan</option>
+									<option>Bangunan</option>
+									<option>Jembatan</option>
+								</select>
+							</div>
+							<div class="form-group full-width">
+								<label for="exampleInputEmail1">Kota</label>
+								<select name="kota" class="form-control">
+									<option>Semarang</option>
+									<option selected="">Sragen</option>
+									<option>Temanggung</option>
+								</select>
+							</div>
+							<div class="form-group full-width">
+								<label for="skpd">SKPD</label>
+								<input type="text" class="form-control" id="skpd" placeholder="BADAN LINGKUNGAN HIDUP KAB.SRAGEN">
+							</div>
+							<div class="form-group full-width">
+								<label for="agent">Agent</label>
+								<input type="text" class="form-control" id="agent" placeholder="Kab. Sragen Regency">
+							</div>
+							<div class="form-group full-width">
+								<label for="sumber_dana">Sumber Dana</label>
+								<input type="text" class="form-control" id="sumber_dana" placeholder="APBD">
+							</div>
+							<div class="form-group full-width">
+								<label for="selesai">Selesai</label>
+								<input type="date" class="form-control" id="selesai" placeholder="02-05-2016">
+							</div>
+							<div class="form-group full-width">
+								<label for="npwp">NPWP</label>
+								<input type="number" class="form-control" id="npwp" placeholder="70.993.319.6-528.000">
+							</div>
+							<div class="form-group full-width">
+								<label for="estimation">Estimation</label>
+								<input type="text" class="form-control" id="estimation" placeholder="325.000.000">
 							</div>
 							<div class="form-group">
-								<label for="exampleInputFile">File input</label>
-								<input type="file" id="exampleInputFile">
+								<label for="lampiran">File Lampiran</label>
+								<input type="file" id="lampiran">
 							</div>
+						</div>
+
+					</div><!--row-->
+					<div class="clear"></div>
+					<div class="row-fluid">
+							<div class="input-group full-width">
+								<label for="keterangan">Keterangan</label>
+								<textarea class="form-control span6" rows="5" name="keterangan" id="keterangan"></textarea>
+							</div>
+							<br>
+							<br>
 							<div class="checkbox">
 								<label>
-									<input type="checkbox"> Check me out
+									<input type="checkbox" name="status" checked=""> Publish Sekarang
 								</label>
 							</div>
-							<button type="submit" class="btn btn-default">Submit</button>
-						</form>
+
+							<button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+							<button type="reset" class="btn btn-danger btn-lg btn-block">Reset</button>
 					</div>
-				</div><!--row-->
+				</form>
 				</div><!-- /widget-content -->
 			</div><!-- /widget -->
 		</div>
@@ -160,6 +211,23 @@
 <!-- javascript -->
 <script src="js/jquery-1.7.2.min.js"></script>
 <script src="js/bootstrap.js"></script>
+<script src="assets/tinymce/tinymce.min.js"></script>
+
+<script type="text/javascript">
+tinymce.init({
+  selector: 'textarea',
+  height: 270,
+  plugins: [
+    'advlist autolink lists link image charmap print preview anchor',
+    'searchreplace visualblocks code fullscreen',
+    'insertdatetime media table contextmenu paste code'
+  ],
+  toolbar: 'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+  content_css: [
+    // '//fast.fonts.net/cssapi/e6dc9b99-64fe-4292-ad98-6974f93cd2a2.css',
+    // '//www.tinymce.com/css/codepen.min.css'
+  ]
+});
 </script>
 </body>
 </html>
