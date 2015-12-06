@@ -3,7 +3,7 @@
   
 <head>
     <meta charset="utf-8">
-    <title>Input Anggaran</title>
+    <title>Input Usulan</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">    
@@ -76,7 +76,7 @@
 			<div class="widget ">
 				<div class="widget-header">
 					<i class="icon-user"></i>
-					<h3>Input Anggaran</h3>
+					<h3>Input Usulan Pembangunan</h3>
 				</div>
 				<!-- /widget-header -->
 				<div class="widget-content">
@@ -84,95 +84,45 @@
 					<div class="row-fluid">
 						<div class="span6">
 							<div class="form-group full-width">
-								<label for="nama_proyek">Nama Proyek</label>
-								<input type="text" name="nama_proyek" class="form-control" id="nama_proyek" placeholder="Pembangunan Jalan mondokan-sumberlawang">
+								<label for="nama">Nama Usulan</label>
+								<input type="text" name="nama" class="form-control" id="nama" placeholder="Pembangunan Jalan mondokan-sumberlawang" required>
 							</div>
 							<div class="form-group full-width">
 								<label for="provinsi">Provinsi</label>
-								<select name="provinsi" class="form-control">
+								<select name="provinsi" class="form-control" required>
 									<option>Jawa Barat</option>
 									<option selected="">Jawa Tengah</option>
 									<option>Jawa Timur</option>
 								</select>
 							</div>
 							<div class="form-group full-width">
-								<label for="lpse">LPSE</label>
-								<input type="text" name="lpse" class="form-control" id="lpse" placeholder="LPSE Kabupaten Sragen">
+								<label for="lpse">Alamat Lengkap</label>
+								<input type="text" name="lpse" class="form-control" id="lpse" placeholder="LPSE Kabupaten Sragen" required>
 							</div>
-							<div class="form-group full-width">
-								<label for="komite">Komite</label>
-								<input type="text" name="komite" class="form-control" id="komite" placeholder="PANITIA ULP KABUPATEN SRAGEN TAHUN 2015">
-							</div>
-							<div class="form-group full-width">
-								<label for="kode_proyek">Kode Proyek</label>
-								<input type="text" class="form-control" id="kode_proyek" placeholder="985228">
-							</div>
-							<div class="form-group full-width">
-								<label for="mulai">Mulai</label>
-								<input type="date" class="form-control" id="mulai" placeholder="02-05-2015">
-							</div>
-							<div class="form-group full-width">
-								<label for="provider">Provider</label>
-								<input type="text" class="form-control" id="provider" placeholder="CV.QYAJAYA VALENT">
-							</div>
-							<div class="form-group full-width">
-								<label for="budget">Budget</label>
-								<input type="text" class="form-control" id="budget" placeholder="325.000.000">
-							</div>
-							<div class="form-group full-width">
-								<label for="cost">Cost</label>
-								<input type="text" class="form-control" id="cost" placeholder="325.000.000">
-							</div>
+
 						</div>
 
 						<div class="span6">
 							<div class="form-group full-width">
-								<label for="exampleInputEmail1">Category</label>
-								<select>
+								<label for="kategori">Kategori</label>
+								<select name="kategori" required>
 									<option selected>Jalan</option>
 									<option>Bangunan</option>
 									<option>Jembatan</option>
 								</select>
 							</div>
 							<div class="form-group full-width">
-								<label for="exampleInputEmail1">Kota</label>
-								<select name="kota" class="form-control">
+								<label for="kota">Kota</label>
+								<select name="kota" class="form-control" required>
 									<option>Semarang</option>
 									<option selected="">Sragen</option>
 									<option>Temanggung</option>
 								</select>
 							</div>
-							<div class="form-group full-width">
-								<label for="skpd">SKPD</label>
-								<input type="text" class="form-control" id="skpd" placeholder="BADAN LINGKUNGAN HIDUP KAB.SRAGEN">
-							</div>
-							<div class="form-group full-width">
-								<label for="agent">Agent</label>
-								<input type="text" class="form-control" id="agent" placeholder="Kab. Sragen Regency">
-							</div>
-							<div class="form-group full-width">
-								<label for="sumber_dana">Sumber Dana</label>
-								<input type="text" class="form-control" id="sumber_dana" placeholder="APBD">
-							</div>
-							<div class="form-group full-width">
-								<label for="selesai">Selesai</label>
-								<input type="date" class="form-control" id="selesai" placeholder="02-05-2016">
-							</div>
-							<div class="form-group full-width">
-								<label for="npwp">NPWP</label>
-								<input type="number" class="form-control" id="npwp" placeholder="70.993.319.6-528.000">
-							</div>
-							<div class="form-group full-width">
-								<label for="estimation">Estimation</label>
-								<input type="text" class="form-control" id="estimation" placeholder="325.000.000">
-							</div>
 							<div class="form-group">
 								<label for="lampiran">File Lampiran</label>
 								<input type="file" id="lampiran" name="lampiran[]" multiple>
 							</div>
-							<div class="form-group">
-								<label for="photo">Photo</label>
-								<input type="file" id="photo" name="photo[]" multiple>
 							</div>
 						</div>
 
@@ -181,7 +131,7 @@
 					<div class="row-fluid">
 							<div class="input-group full-width">
 								<label for="keterangan">Keterangan</label>
-								<textarea class="form-control span6" rows="5" name="keterangan" id="keterangan"></textarea>
+								<textarea class="form-control span6" rows="5" name="keterangan" id="keterangan" required></textarea>
 							</div>
 							<br>
 							<br>
@@ -218,8 +168,8 @@ tinymce.init({
   height: 270,
   plugins: [
     'advlist autolink lists link image charmap print preview anchor',
-    'searchreplace visualblocks code fullscreen',
-    'insertdatetime media table contextmenu paste code'
+    'searchreplace visualblocks fullscreen',
+    'insertdatetime media table contextmenu paste'
   ],
   toolbar: 'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
   content_css: [

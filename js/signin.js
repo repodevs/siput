@@ -15,14 +15,14 @@ $(document).ready(function(){
 
 		$.ajax({
 			method 	: "POST",
-			url  	: 'js/signin.php',
+			url  	: 'sys/signin.php',
 			data 	: {
 				submit 	: 'submit',
 				user 	: user,
 				pass 	: pass
 			}
 		}).done(function(msg){
-			if(msg=='1'){
+			if(msg.trim()=='1'){
 				window.location.href = 'index.html';
 			}else{
 				alert(msg);
