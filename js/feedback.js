@@ -25,4 +25,16 @@ $(document).ready(function() {
 			$('#inMsg').val('');
 		}
 	});
+
+	//LIKE AND DISLIKE
+	$('#like').on('click', function(){
+		var data = eval($(this).next().text())+1;
+		$(this).next().text(data);
+		$('.stat-user').css('pointer-events', 'none');
+	})
+	$('#dislike').on('click', function(){
+		var data = eval($(this).next().text())-1;
+		$(this).next().text(data)
+		$('.stat-user').css('pointer-events', 'none');
+	})
 });

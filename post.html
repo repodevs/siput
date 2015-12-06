@@ -63,23 +63,23 @@
 		<!-- /navbar-inner -->
 	</div>
 	<!-- /navbar -->
-	<div class="subnavbar">
-		<div class="subnavbar-inner">
-			<div class="container">
-				<ul class="mainnav">
-					<li><a href="index.html"><i class="icon-dashboard"></i><span>Dashboard</span> </a> </li>
-					<li><a href="reports.html"><i class="icon-list-alt"></i><span>Reports</span> </a> </li>
-					<li><a href="feeedback.html"><i class="icon-bar-chart"></i><span>Feedback</span> </a> </li>
-					<li><a href="faq.html"><i class="icon-facetime-video"></i><span>FAQ</span> </a></li>
-					<li><a href="#"><i class="icon-code"></i><span>Dummy</span> </a></li>
-					<li><a href="#"><i class="icon-code"></i><span>Dummy</span> </a> </li>
-				</ul>
+		<div class="subnavbar">
+			<div class="subnavbar-inner">
+				<div class="container">
+					<ul class="mainnav">
+						<li><a href="index.html"><i class="icon-dashboard"></i><span>Dashboard</span> </a> </li>
+						<li><a href="reports.html"><i class="icon-list-alt"></i><span>Reports</span> </a> </li>
+						<li><a href="feeedback.html"><i class="icon-bar-chart"></i><span>Feedback</span> </a> </li>
+						<li><a href="user.html"><i class="icon-group"></i><span>User</span> </a></li>
+						<li><a href="faq.html"><i class="icon-facetime-video"></i><span>FAQ</span> </a></li>
+						<li><a href="usulan.html"><i class="icon-code"></i><span>Usulan</span> </a> </li>
+					</ul>
+				</div>
+				<!-- /container -->
 			</div>
-			<!-- /container -->
+			<!-- /subnavbar-inner -->
 		</div>
-		<!-- /subnavbar-inner -->
-	</div>
-	<!-- /subnavbar -->
+		<!-- /subnavbar -->
     
 	<div class="main">
 		<div class="main-inner">
@@ -179,8 +179,8 @@
 										<div class="widget big-stats-container">
 											<div class="widget-content">
 												<div id="big_stats" class="cf">
-													<div class="stat-user"> <i class="icon-thumbs-up-alt"></i> <span class="value">321</span> </div>
-													<div class="stat-user"> <i class="icon-thumbs-down-alt"></i> <span class="value">123</span> </div>
+													<div class="stat-user"> <i id="like" class="icon-thumbs-up-alt"></i> <span class="value">321</span> </div>
+													<div class="stat-user"> <i id="dislike" class="icon-thumbs-down-alt"></i> <span class="value">123</span> </div>
 												</div>
 											</div>
 											<!-- /widget-content -->
@@ -374,11 +374,11 @@
 			});
 
 			$('.stat-user:first-child').one('click', function(){
-				$('.vote-post').html('(Anda telah menyukai pembangunan ini)')
+				$('.vote-post').html('( Anda telah menyukai pembangunan ini... )')
 			});
 			
 			$('.stat-user:last-child').one('click', function(){
-				$('.vote-post').html('(Anda tidak lagi menyukai pembangunan)')
+				$('.vote-post').html('( Anda tidak lagi menyukai pembangunan ini... )')
 			});
 		});
 	</script>
