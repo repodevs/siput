@@ -28,5 +28,13 @@ $.ajax({
 	$('#npwp').text(data.npwp)
 	$('#estimtion').text(data.estimtion)
 	$('#keterangan').text(data.keterangan)
+
+
+	//DATA COUNT LIKE 
+	$('#count_like' ).text('0');
+	$('#count_dislike' ).text('0');
+
+	//DATA COUNT FEEDBACK
+	$('#messages_layout').empty();
 	// console.log(data.
 })
