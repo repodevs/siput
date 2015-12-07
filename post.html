@@ -93,7 +93,7 @@
 
 							<i class="icon-th-large"></i>
 
-							<h3 class="judul-post">Perbaikan Jalan Tol Jakarta–Cikampek</h3>
+							<h3 class="judul-post" id="prj_name">Perbaikan Jalan Tol Jakarta–Cikampek</h3>
 							<span class="vote-post"></span>
 						</div> <!-- /widget-header -->
 
@@ -109,7 +109,7 @@
 									<br>
 									<div class="keterangan-post">
 										<h2>Keterangan:</h2>
-										<p>"alan Tol Jakarta-Cikampek adalah sebuah jalan tol dari Cawang menuju Cikampek. Panjang jalan tol ini adalah 73 kilometer. Jalan tol ini melintasi Kota Jakarta Timur, Kota dan Kabupaten Bekasi, Kabupaten Karawang, dan Purwakarta. Jalan tol ini mulai dioperasikan semenjak tahun 1988 setelah Jalan Tol Jagorawi pada tahun 1978 dan Jalan Tol Jakarta-Merak pada tahun 1984.."</p>
+										<p id="keterangan">"Jalan Tol Jakarta-Cikampek adalah sebuah jalan tol dari Cawang menuju Cikampek. Panjang jalan tol ini adalah 73 kilometer. Jalan tol ini melintasi Kota Jakarta Timur, Kota dan Kabupaten Bekasi, Kabupaten Karawang, dan Purwakarta. Jalan tol ini mulai dioperasikan semenjak tahun 1988 setelah Jalan Tol Jagorawi pada tahun 1978 dan Jalan Tol Jakarta-Merak pada tahun 1984.."</p>
 									</div><br>
 									
 									<h2>Rincian Table:</h2>
@@ -117,55 +117,55 @@
 										<table class="table table-bordered">
 										<tr>
 											<td><b>Project name</b></td>
-											<td>Perbaikan Jalan Tol Jakarta–Cikampek</td>
+											<td id="nama_proyek">Perbaikan Jalan Tol Jakarta–Cikampek</td>
 											<td><b>Category</b></td>
-											<td>Pekerjaan Konstruksi</td>
+											<td id="kategori">Pekerjaan Konstruksi</td>
 										</tr>
 										<tr>
 											<td><b>Province</b></td>
-											<td>Jakarta Timur</td>
+											<td id="propinsi">Jakarta Timur</td>
 											<td><b>Kota</b></td>
-											<td>Jakarta Timur</td>
+											<td id="kota"> Jakarta Timur</td>
 										</tr>
 										<tr>
 											<td><b>LPSE</b></td>
-											<td>LPSE Jakarta timur</td>
+											<td id="lpse">LPSE Jakarta timur</td>
 											<td><b>SKPD</b></td>
-											<td>BADAN LINGKUNGAN HIDUP DKI JAKARTA</td>
+											<td id="skpd">BADAN LINGKUNGAN HIDUP DKI JAKARTA</td>
 										</tr>
 										<tr>
 											<td><b>Komite</b></td>
-											<td>PANITIA ULP Jakarta Timur 2015</td>
+											<td id="komite">PANITIA ULP Jakarta Timur 2015</td>
 											<td><b>Agent</b></td>
-											<td>Jakarta Timur Regency</td>
+											<td id="agent">Jakarta Timur Regency</td>
 										</tr>
 										<tr>
 											<td><b>Kode Proyek</b></td>
-											<td>985228</td>
+											<td id="kode_proyek">985228</td>
 											<td><b>Sumber Dana</b></td>
-											<td>APBD</td>
+											<td id="sumber_dana">APBD</td>
 										</tr>
 										<tr>
 											<td><b>Mulai</b></td>
-											<td>02 mei 2015</td>
+											<td id="mulai">02 mei 2015</td>
 											<td><b>Selesai</b></td>
-											<td>2 Maret 2016</td>
+											<td id="selesai">2 Maret 2016</td>
 										</tr>
 										<tr>
 											<td><b>Provider</b></td>
-											<td>CV.QYAJAYA VALENT</td>
+											<td id="provider">CV.QYAJAYA VALENT</td>
 											<td><b>NPWP</b></td>
-											<td>70.993.319.6-528.000</td>
+											<td id="npwp">70.993.319.6-528.000</td>
 										</tr>
 										<tr>
 											<td><b>Budget</b></td>
-											<td>325.000.000</td>
+											<td id="budget">325.000.000</td>
 											<td><b>Estimation</b></td>
-											<td>325.000.000</td>
+											<td id="estimtion">325.000.000</td>
 										</tr>
 										<tr>
 											<td><b>Cost</b></td>
-											<td>1.229.000.000</td>
+											<td id="cost">1.229.000.000</td>
 											<td></td>
 											<td></td>
 										</tr>
@@ -180,8 +180,8 @@
 										<div class="widget big-stats-container">
 											<div class="widget-content">
 												<div id="big_stats" class="cf">
-													<div class="stat-user"> <i id="like" class="icon-thumbs-up-alt"></i> <span class="value">321</span> </div>
-													<div class="stat-user"> <i id="dislike" class="icon-thumbs-down-alt"></i> <span class="value">123</span> </div>
+													<div class="stat-user"> <i id="like" class="icon-thumbs-up-alt"></i> <span id="count_like" class="value">321</span> </div>
+													<div class="stat-user"> <i id="dislike" class="icon-thumbs-down-alt"></i> <span id="count_dislike" class="value">123</span> </div>
 												</div>
 											</div>
 											<!-- /widget-content -->
@@ -352,6 +352,7 @@
 	<script src="js/bootstrap.js"></script>
   	<script src="js/owl.carousel.min.js"></script>
   	<script src="js/feedback.js"></script>
+      <script src="js/input_view.js"></script>
 	<script>
 		$('#kategori>li>a').before('<input type="checkbox" class="checkboxKategori" id="jakarta" value="jakarta">')
   		$('#user').text(getCookie('username').replace(/\+/g, ' '));
