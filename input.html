@@ -35,15 +35,15 @@
   								<input type="text" class="search-query" placeholder="Search">
   							</form>
   						</li>
-  						<li class="dropdown">
-  							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-  								<i class="icon-user"></i> Admin <b class="caret"></b>
-  							</a>
-  							<ul class="dropdown-menu">
-  								<li><a href="javascript:;">Profile</a></li>
-  								<li><a href="javascript:;">Logout</a></li>
-  							</ul>
-  						</li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="icon-user"></i> <span id="user"></span><b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="profile.html">Profile</a></li>
+                  <li><a id="logout" href="javascript:;">Logout</a></li>
+                </ul>
+              </li>
   					</ul>
   				</div>
   				<!--/.nav-collapse -->
@@ -83,7 +83,7 @@
   					</div>
   					<!-- /widget-header -->
   					<div class="widget-content">
-  						<form role="form" method="POST" enctype="multipart/form-data" action="post.html">
+  						<form role="form" method="POST" enctype="multipart/form-data" action="sys/input.php">
   							<div class="row-fluid">
   								<div class="span6">
   									<div class="form-group full-width">
@@ -139,37 +139,37 @@
   									</div>
   									<div class="form-group full-width">
   										<label for="kode_proyek">Kode Proyek</label>
-  										<input type="text" class="form-control" id="kode_proyek" placeholder="985228">
+  										<input type="text" name="kode_proyek" class="form-control" id="kode_proyek" placeholder="985228">
   									</div>
   									<div class="form-group full-width">
   										<label for="mulai">Mulai</label>
-  										<input type="date" class="form-control" id="mulai" placeholder="02-05-2015">
+  										<input type="date" name="mulai" class="form-control" id="mulai" placeholder="02-05-2015">
   									</div>
   									<div class="form-group full-width">
   										<label for="provider">Provider</label>
-  										<input type="text" class="form-control" id="provider" placeholder="CV.QYAJAYA VALENT">
+  										<input type="text" name="provider" class="form-control" id="provider" placeholder="CV.QYAJAYA VALENT">
   									</div>
   									<div class="form-group full-width">
   										<label for="budget">Budget</label>
-  										<input type="text" class="form-control" id="budget" placeholder="325.000.000">
+  										<input type="text" name="budget" class="form-control" id="budget" placeholder="325.000.000">
   									</div>
   									<div class="form-group full-width">
   										<label for="cost">Cost</label>
-  										<input type="text" class="form-control" id="cost" placeholder="325.000.000">
+  										<input type="text" name="cost" class="form-control" id="cost" placeholder="325.000.000">
   									</div>
   								</div>
 
   								<div class="span6">
   									<div class="form-group full-width">
-  										<label for="exampleInputEmail1">Category</label>
-  										<select>
+  										<label for="kategori">Kategori</label>
+  										<select name="kategori">
   											<option selected>Jalan</option>
   											<option>Bangunan</option>
   											<option>Jembatan</option>
   										</select>
   									</div>
   									<div class="form-group full-width">
-  										<label for="exampleInputEmail1">Kota</label>
+  										<label for="kota">Kota</label>
   										<select name="kota" class="form-control">
   											<option>Pilih Kota</option>
   											<option>Bantul</option>
@@ -181,35 +181,35 @@
   									</div>
   									<div class="form-group full-width">
   										<label for="skpd">SKPD</label>
-  										<input type="text" class="form-control" id="skpd" placeholder="BADAN LINGKUNGAN HIDUP KAB.SRAGEN">
+  										<input type="text" name="skpd" class="form-control" id="skpd" placeholder="BADAN LINGKUNGAN HIDUP KAB.SRAGEN">
   									</div>
   									<div class="form-group full-width">
   										<label for="agent">Agent</label>
-  										<input type="text" class="form-control" id="agent" placeholder="Kab. Sragen Regency">
+  										<input type="text" name="agent" class="form-control" id="agent" placeholder="Kab. Sragen Regency">
   									</div>
   									<div class="form-group full-width">
   										<label for="sumber_dana">Sumber Dana</label>
-  										<input type="text" class="form-control" id="sumber_dana" placeholder="APBD">
+  										<input type="text" name="sumber_dana" class="form-control" id="sumber_dana" placeholder="APBD">
   									</div>
   									<div class="form-group full-width">
   										<label for="selesai">Selesai</label>
-  										<input type="date" class="form-control" id="selesai" placeholder="02-05-2016">
+  										<input type="date" name="selesai" class="form-control" id="selesai" placeholder="02-05-2016">
   									</div>
   									<div class="form-group full-width">
   										<label for="npwp">NPWP</label>
-  										<input type="number" class="form-control" id="npwp" placeholder="70.993.319.6-528.000">
+  										<input type="text" name="npwp" class="form-control" id="npwp" placeholder="70.993.319.6-528.000">
   									</div>
   									<div class="form-group full-width">
   										<label for="estimation">Estimation</label>
-  										<input type="text" class="form-control" id="estimation" placeholder="325.000.000">
+  										<input type="text" name="estimation" class="form-control" id="estimation" placeholder="325.000.000">
   									</div>
   									<div class="form-group">
   										<label for="lampiran">File Lampiran</label>
-  										<input type="file" id="lampiran" name="lampiran[]" multiple>
+  										<input type="file" id="lampiran" name="lampiran">
   									</div>
   									<div class="form-group">
   										<label for="photo">Photo</label>
-  										<input type="file" id="photo" name="photo[]" multiple>
+  										<input type="file" id="photo" name="photo" multiple>
   									</div>
   								</div>
 
@@ -224,7 +224,7 @@
   								<br>
   								<div style="float: right;">
   									<button type="reset" class="btn btn-danger btn-large span2">Reset</button>
-  									<button type="submit" class="btn btn-primary btn-large span2">Submit</button>
+  									<button type="submit" name="input_pembangunan" class="btn btn-primary btn-large span2">Submit</button>
   								</div>
   							</div>
   						</form>

@@ -41,7 +41,7 @@
   								<i class="icon-user"></i> <span id="user"></span><b class="caret"></b>
   							</a>
   							<ul class="dropdown-menu">
-  								<li><a href="javascript:;">Profile</a></li>
+                  <li><a href="profile.html">Profile</a></li>
   								<li><a id="logout" href="javascript:;">Logout</a></li>
   							</ul>
   						</li>
@@ -279,7 +279,7 @@
                   </tr>
                   <tr>
                     <td> <a href="usulan_detail.html">Pembangunan Jembatan Mataram</a> </td>
-                    <td class="td-actions"><a href="javascript:;" class="btn btn-small btn-success disabled"><i class="btn-icon-only icon-ok"> </i></a><a href="javascript:;" class="btn btn-danger btn-small"><i class="btn-icon-only icon-remove"> </i></a></td>
+                    <td class="td-actions"><a href="javascript:;" class="btn btn-small btn-success"><i class="btn-icon-only icon-ok"> </i></a><a href="javascript:;" class="btn btn-danger btn-small"><i class="btn-icon-only icon-remove"> </i></a></td>
                   </tr>
                 
                 </tbody>
@@ -356,6 +356,15 @@
 			document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
 			window.location.href='login.html' 
 		});
+
+    $('a.btn.btn-small.btn-success').on('click', function(){
+      $(this).addClass('disabled');
+      $(this).next().remove();
+    })
+
+    $('a.btn.btn-small.btn-danger').on('click', function(){
+      $(this).parent().parent().remove();
+    })
   	</script>
   </body>
   </html>
