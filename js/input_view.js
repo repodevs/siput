@@ -27,7 +27,7 @@ $.ajax({
 	$('#selesai').text(data.selesai)
 	$('#npwp').text(data.npwp)
 	$('#estimtion').text(data.estimtion)
-	$('#keterangan').text(data.keterangan)
+	$('#keterangan').html(data.keterangan)
 
 
 	//DATA COUNT LIKE 

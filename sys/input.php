@@ -57,7 +57,7 @@ if (isset($_POST['input_pembangunan'])) {
 		)");
 
 	if ($q) {
-		$qry = mysql_fetch_array(mysql_query("SELECT * FROM data_pembangunan LIMIT 1"));
+		$qry = mysql_fetch_array(mysql_query("SELECT * FROM data_pembangunan ORDER BY id DESC LIMIT 1"));
 		$id = $qry['id'];
 		header("Location: /post.html?id=$id");
 	} else {
